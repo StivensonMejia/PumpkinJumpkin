@@ -204,6 +204,62 @@ a {
     }
 }
 
+@media (width <= 920px) {
+    #index_section2 {
+        .idxSec2_videoContainer {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            position: relative;
+            overflow: hidden;
+            iframe, object, embed {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+        .idxSec2_descriptionContainer {
+            width: 100%;
+            padding: 100px 5%;
+        }
+    }
+    #index_section3 {
+        .idxSec3_galeryContainer {
+            width: 100%;
+            padding: 0 5%;
+            
+        }
+    }
+    #index_section4 {
+        .idxSec4_additionalText {
+            width: 100%;
+            padding: 0 5%;
+        }
+        .idxSec4_referentsContainer {
+            width: 100%;
+            flex-direction: column-reverse;
+            gap: 10px;
+            padding: 0 5%;
+            .idxSec4_imgContainer {
+                width: 150px;
+                height: 150px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .idxSec4_mailContainer {
+            width: 100%;
+            padding: 0 5%;
+        }
+    }
+
+}
+
+
 #overlay {
     position: fixed;
     top: 0;
