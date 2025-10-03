@@ -147,11 +147,60 @@ a {
 }
 
 #index_section4 {
+    position: relative;
     width: 100%;
     height: auto;
     justify-content: center;
     overflow: hidden;
     background-color: #141414;
+    .idxSec4_previewGameContainer {
+        z-index: 2;
+        width: 900px;
+        height: 507px;
+        position: relative;
+        margin: 0 auto 300px;
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+        iframe {
+            display: none;
+        }
+        .idxSec4_playGame{
+            position: relative;
+            width: 900px;
+            height: 507px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: yellowgreen;
+            background-image: url("./Assets/Img/portadaBrowserGame.webp");
+            background-size: cover;
+            button {
+                cursor: pointer;
+                font-size: 5rem;
+                width: 100%;
+                height: 100%;
+                color: white;
+                background-color:rgba(35, 35, 35, 0.427);
+                border: none;
+            }
+        }
+        .idxSec4_controls {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: space-evenly;
+            align-items: end;
+            margin-top: 20px;
+            img {
+                object-fit: contain;
+            }
+        }
+    }
     .idxSec4_additionalText {
         display: block;
         width: 900px;

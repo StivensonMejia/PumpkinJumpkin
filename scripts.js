@@ -48,3 +48,14 @@ images.forEach(image => {
 
 // Agregar evento click al botón de cerrar
 closeBtn.addEventListener('click', closeFullscreen);
+
+let gameButon = document.getElementById("playGame");
+let gameIframe = document.getElementById("gameIframe");
+
+function playGame() {
+    gameIframe.style.display = "block";
+    gameButon.parentElement.style.display = "none";
+    gameIframe.focus;
+}
+
+gameButon.addEventListener("click", playGame);
